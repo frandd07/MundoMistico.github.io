@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iniciar sesión/Registrarse</title>
+  <link rel="stylesheet" href="../css/pag_login.css">
+  <script src="../js/pag_login.js"></script>
+</head>
+<body>
+  <div class="cuadrado cuadrado1" onclick="redirigirAPagina('https://www.coca-cola.com/es/es/offerings/fanta-yummy-snacking?https://www.coca-cola.com/es/es/offerings/fanta-yummy-snacking?utm_source=google_p&utm_medium=Search&utm_campaign=ESFantaYummySnacking&utm_content=link&utm_source=google_p&utm_medium=Search&utm_campaign=FantaSnacking22&utm_content=link&gad_source=1&gclid=CjwKCAiA6KWvBhAREiwAFPZM7np9yo0BkEmicmJ7nmcwyB8Qx3nvRdvrHU1dXdjyCUS_u4cpgnLPYBoCapIQAvD_BwE')">
+    <button class="cerrar" onclick="cerrarCuadro('cuadrado1')">X</button>
+    <img src="../res/anuncio.png" alt="Imagen 1">
+  </div>
+
+  <div class="cuadrado cuadrado2" onclick="redirigirAPagina('https://tinder.com/es-ES')">
+    <button class="cerrar" onclick="cerrarCuadro('cuadrado2')">X</button>
+    <img src="../res/anuncio2.png" alt="Imagen 2">
+    <p>María quiere conocerte, está a 2km de ti</p>
+  </div>
+
+  <div class="cuadrado cuadrado3">
+    <button class="cerrar" onclick="cerrarCuadro('cuadrado3')">X</button>
+    <img src="../res/anuncio3.gif" alt="Imagen 2">
+  </div>
+
+  <div class="cotn_principal">
+    <div class="cont_centrar">
+      <div class="cont_login">
+        <div class="cont_info_log_sign_up">
+          <div class="col_md_login">
+            <div class="cont_ba_opcitiy">
+              <h2>Inicia sesión</h2>  
+              <p>Si ya tienes una cuenta, inicia sesión</p> 
+              <button class="btn_login" onclick="change_to_login()">Iniciar sesión</button>
+            </div>
+          </div>
+          <div class="col_md_sign_up">
+            <div class="cont_ba_opcitiy">
+              <h2>Regístrate</h2>
+              <p>Si aún no tienes cuenta y quieres acceder al contenido, regístrate</p>
+              <button class="btn_sign_up" onclick="change_to_sign_up()">Regístrate</button>
+            </div>
+          </div>
+        </div>
+        <div class="cont_back_info">
+          <div class="cont_img_back_grey">
+            <img src="fondito.jpg" alt="" />
+          </div>
+        </div>
+        <div class="cont_forms">
+          <div class="cont_img_back_">
+            <img src="../res/fondo_brujeria.jpeg" alt="" />
+          </div>
+          <div class="cont_form_login">
+            <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+            <h2>Inicia sesión</h2>
+            <input type="email" placeholder="Email" required />
+            <input type="password" placeholder="Contraseña" required/>
+            <button class="btn_login" onclick="change_to_login();redirigirApagina()">Inicia sesión</button>
+          </div>
+          <div class="cont_form_sign_up">
+            <a href="#" onclick="hidden_login_and_sign_up()"><i class="material-icons">&#xE5C4;</i></a>
+            <h2>Regístrate</h2>
+            <input type="email" placeholder="Email"  required />
+            <input type="text" placeholder="Usuario" required />
+            <input type="password" placeholder="Contraseña" required/>
+            <input type="password" placeholder="Confirmar contraseña" required />
+            <button class="btn_sign_up" onclick="change_to_sign_up();redirigirApagina()">Registrarse</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

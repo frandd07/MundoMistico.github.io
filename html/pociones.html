@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varitas Mágicas</title>
+    <link rel="stylesheet" href="../css/pag_productos.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/pag_productos.js"></script>
+</head>
+<body>
+    <header>
+        <a href="../html/pag_inicial.html"><img src="../res/logoPagina.png" alt="Logo"></a>
+          
+          <div>
+            <h1>Mundo Místico</h1>
+            
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Cesta</a></li>
+        
+            </ul>
+            <div class="dropdown">
+              <a href="#">Productos ▼</a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+            <div class="dropdown">
+              <a href="#">Mi Cuenta ▼</a>
+              <div class="dropdown-content">
+              </div>
+            </div>
+          </nav>
+        </header>
+        <body>
+    <section>
+        <div class="recipe-container">
+            <h1>Pociones especiales</h1>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <!-- Tarjeta 1 -->
+                    <div class="swiper-slide post">
+                        <img class="post-img" src="../res/pocion_espejismo.jpeg" alt="recipe" />
+                        <!-- Contenido de la tarjeta -->
+                        <div class="post-body">
+                            <img class="post-avatar" src="../res/logoPagina.png" alt="avatar" />
+                            <div class="post-detail">
+                                <h2 class="post-name">Poción del Espejismo Iridescente</h2>
+                                <p class="post-author">Esta poción, de tonos resplandecientes y textura etérea, despierta un espejismo encantado. Al beberla, el mundo a tu alrededor se transforma en una paleta de colores vibrantes y formas caprichosas. La Poción del Espejismo Iridescente no solo altera la percepción visual, sino que también susurra secretos ocultos a aquellos lo suficientemente intrépidos para probarla. Cautivadora y efímera, esta poción mágica es un viaje fugaz a través de un espectro de maravillas ilusorias. ¡Descubre un universo de espejismos con cada sorbo!</p>
+                            </div>
+                            <div class="post-actions">
+                                <a class="post-like" href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+                                <button class="post-actions-controller" data-target="post1" aria-controls="post-actions-content" aria-expanded="false"><i class="fa-solid fa-ellipsis fa-2xl"></i></button>
+                                <div class="post-actions-content" id="post1" data-visible="false" aria-hidden="true">
+                                    <ul role="list" class="grid-flow" data-spacing="small">
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-folder-open"></i><span>Add to Collection</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-eye"></i><span>Show the Recipe</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-user-plus"></i><span>Follow the User</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Botón Comprar -->
+                                <button class="post-buy-button" >Comprar</button>
+                                <p class="precio">42€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 2 -->
+                    <div class="swiper-slide post">
+                        <img class="post-img" src="../res/pocion_invisibilidad.jpeg" alt="recipe" />
+                        <!-- Contenido de la tarjeta -->
+                        <div class="post-body">
+                            <img class="post-avatar" src="../res/logoPagina.png" alt="avatar" />
+                            <div class="post-detail">
+                                <h2 class="post-name">Poción de la Luminosa Invisibilidad</h2>
+                                <p class="post-author">Una mezcla mágica que concede temporalmente el don de la invisibilidad. La Poción de la Luminosa Invisibilidad se crea con ingredientes secretos recolectados bajo la luz de la luna. Ideal para momentos en los que deseas pasar desapercibido y explorar el mundo sin ser visto.</p>
+                            </div>
+                            <div class="post-actions">
+                                <a class="post-like" href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+                                <button class="post-actions-controller" data-target="post2" aria-controls="post-actions-content" aria-expanded="false"><i class="fa-solid fa-ellipsis fa-2xl"></i></button>
+                                <div class="post-actions-content" id="post2" data-visible="false" aria-hidden="true">
+                                    <ul role="list" class="grid-flow" data-spacing="small">
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-folder-open"></i><span>Add to Collection</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-eye"></i><span>Show the Recipe</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-user-plus"></i><span>Follow the User</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Botón Comprar -->
+                                <button class="post-buy-button">Comprar</button>
+                                <p class="precio">37,10€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 3 -->
+                    <div class="swiper-slide post">
+                        <img class="post-img" src="../res/pocion_tiempo.jpeg" alt="recipe" />
+                        <!-- Contenido de la tarjeta -->
+                        <div class="post-body">
+                            <img class="post-avatar" src="../res/logoPagina.png" alt="avatar" />
+                            <div class="post-detail">
+                                <h2 class="post-name">Elixir del Tiempo Olvidado</h2>
+                                <p class="post-author">Esta poción ancestral está elaborada con ingredientes recolectados en lugares donde el tiempo parece detenerse. El Elixir del Tiempo Olvidado tiene el poder de crear momentos atemporales, permitiéndote sumergirte en la nostalgia y revivir recuerdos perdidos.</p>
+                            </div>
+                            <div class="post-actions">
+                                <a class="post-like" href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+                                <button class="post-actions-controller" data-target="post3" aria-controls="post-actions-content" aria-expanded="false"><i class="fa-solid fa-ellipsis fa-2xl"></i></button>
+                                <div class="post-actions-content" id="post3" data-visible="false" aria-hidden="true">
+                                    <ul role="list" class="grid-flow" data-spacing="small">
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-folder-open"></i><span>Add to Collection</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-eye"></i><span>Show the Recipe</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-user-plus"></i><span>Follow the User</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Botón Comprar -->
+                                <button class="post-buy-button">Comprar</button>
+                                <p class="precio">44,99€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tarjeta 4 -->
+                    <div class="swiper-slide post">
+                        <img class="post-img" src="../res/pocion_neblina.jpeg" alt="recipe" />
+                        <!-- Contenido de la tarjeta -->
+                        <div class="post-body">
+                            <img class="post-avatar" src="../res/logoPagina.png" alt="avatar" />
+                            <div class="post-detail">
+                                <h2 class="post-name">Poción de la Neblina de Ensueño</h2>
+                                <p class="post-author">El vapor mágico de la Poción de la Neblina de Ensueño envuelve al bebedor en una neblina etérea. Esta poción transporta a quien la consume a un estado de ensueño, donde la realidad se mezcla con la fantasía. Ideal para momentos de meditación y reflexión.</p>
+                            </div>
+                            <div class="post-actions">
+                                <a class="post-like" href="javascript:void(0)"><i class="fas fa-heart"></i></a>
+                                <button class="post-actions-controller" data-target="post4" aria-controls="post-actions-content" aria-expanded="false"><i class="fa-solid fa-ellipsis fa-2xl"></i></button>
+                                <div class="post-actions-content" id="post4" data-visible="false" aria-hidden="true">
+                                    <ul role="list" class="grid-flow" data-spacing="small">
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-folder-open"></i><span>Add to Collection</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-eye"></i><span>Show the Recipe</span></a></li>
+                                        <li><a class="post-actions-link" href="javascript:void(0)"><i class="fa-solid fa-user-plus"></i><span>Follow the User</span></a></li>
+                                    </ul>
+                                </div>
+                                <!-- Botón Comprar -->
+                                <button class="post-buy-button">Comprar</button>
+                                <p class="precio">39,99€</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+    </section>
+    </body>
+    <footer>
+        <a href="../html/ter_cond.html">Términos y Condiciones</a>
+        <a href="../html/sobre_nosotros.html">Sobre Nosotros</a>
+        <a href="mailto:mundomistico@gmail.com">Contáctenos</a>
+        <a href="https://www.instagram.com/">
+            <img src="../res/instagram.png" alt="Logo 1">
+          </a>
+        
+          <a href="https://www.facebook.com/?locale=es_ES">
+            <img src="../res/facebook.png" alt="Logo 2">
+          </a>
+        
+          <a href="https://twitter.com/?lang=es">
+            <img src="../res/tw.png" alt="Logo 3">
+          </a>
+    </footer>
+        
+</body>
+</html>

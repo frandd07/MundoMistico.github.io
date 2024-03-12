@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: url(../res/fondito.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+#contenedor {
+    text-align: center;
+    color: white;
+}
+
+#mensaje {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+#cuenta-atras {
+    font-size: 56px;
+    color: white;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 480px) {
+  .contenedor{
+    width: 100%;
+  }
+  }
+  
+  /* Small Devices, Tablets */
+  @media only screen and (min-width: 768px) {
+    .contenedor{
+        width: 100%;
+      }
+   
+  }
+  
+  /* Medium Devices, Desktops */
+  @media only screen and (min-width: 992px) {
+    .contenedor{
+        width: 100%;
+      }
+  }
+  
+  /* Large Devices, Wide Screens */
+  @media only screen and (min-width: 1200px) {
+    .contenedor{
+        width: 100%;
+      }
+  }

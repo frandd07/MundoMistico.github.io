@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@500;700&display=swap");
+
+
+:root {
+  --clr-text: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+body {
+  background: url('../res/fondito.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 60px;
+}
+
+.recipe-container {
+  background: rgba(189, 181, 181, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 25px;
+  padding: 30px 0;
+  width: min(1200px, 100%);
+}
+
+.recipe-container > h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: #dda3b6;
+  margin: 20px 0 40px;
+}
+
+.swiper {
+  width: 80%;
+  height: 100%;
+  margin-bottom: 30px;
+
+}
+
+
+.swiper-wrapper {
+    display: flex; /* Ajuste para mostrar en línea horizontalmente */
+  }
+  
+  .swiper-slide {
+    margin-right: 10px; /* Ajuste para agregar un espacio entre las tarjetas */
+  }
+
+
+.swiper-scrollbar {
+  --swiper-scrollbar-bottom: 0;
+  --swiper-scrollbar-drag-bg-color: #dda3b6;
+  --swiper-scrollbar-size: 5px;
+}
+
+.post {
+  max-width: 400px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--clr-text);
+  background: rgba(236, 149, 200, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 16px 16px 0;
+  margin-bottom: 16px;
+}
+
+.post-img {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  border-radius: 6px;
+  user-select: none;
+  pointer-events: none;
+}
+
+.post-body {
+  display: flex;
+  flex-direction: column; /* Cambiar a columna para que los elementos se apilen verticalmente */
+  align-items: center;
+  gap: 8px;
+  padding: 15px 0;
+  cursor: default;
+}
+.post-author {
+  width: 100%; /* Asegurarse de que la descripción del autor ocupe todo el ancho */
+}
+
+.post-buy-button {
+  margin-top: 10px;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff00ff; /* Color de fondo */
+  color: #fff; /* Color del texto */
+
+  /* Efecto de luces de neón con menos iluminación */
+  text-shadow: 0 0 5px rgba(255, 0, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.5), 0 0 15px rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 5px rgba(255, 0, 255, 0.5), 0 0 10px rgba(255, 0, 255, 0.5), 0 0 15px rgba(255, 0, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+.post-buy-button:hover {
+  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
+}
+
+
+.post-name {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 2px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.post-author {
+  width: fit-content;
+  font-size: 0.8rem;
+  font-weight: 600;
+  opacity: 0.6;
+  color: var(--clr-text);
+}
+
+.post-avatar {
+  width: 40px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-actions {
+  position: relative;
+}
+
+.post-actions-content {
+  position: absolute;
+  bottom: 130%;
+  right: 0;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(172, 172, 172, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 2px 2px 10px 2px hsl(0, 0%, 0%, 0.25);
+  transition: opacity 0.25s, scale 0.25s;
+  transform-origin: bottom right;
+}
+
+.post-actions-content[data-visible="false"] {
+  pointer-events: none;
+  opacity: 0;
+  scale: 0;
+}
+
+.post-actions-content[data-visible="true"] {
+  pointer-events: unset;
+  scale: 1;
+  opacity: 1;
+}
+
+.post-actions-content li {
+  padding: 0.5rem 0.65rem;
+  border-radius: 0.25rem;
+  list-style: none;
+}
+
+.post-actions-content li:is(:hover, :focus-within) {
+  background-color: rgba(248, 132, 169, 0.7);
+}
+
+.post-actions-link {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 1rem 1fr;
+  align-items: center;
+  gap: 0.6rem;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.post-like {
+  text-decoration: none;
+  color: var(--clr-text);
+  margin-right: 5px;
+  font-size: 1.1rem;
+  opacity: 0.65;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+
+.post-actions-controller {
+  border: 0;
+  background: none;
+  color: var(--clr-text);
+  cursor: pointer;
+  opacity: 0.65;
+}
+
+.post-like:hover,
+.post-actions-controller:hover {
+  opacity: 1;
+}
+
+.post-like:focus {
+  outline: none;
+}
+
+.post-like.active {
+  color: rgb(255, 0, 0);
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1200px) { 
+  .swiper {
+      width: 80%;
+    }
+}
+
+@media (max-width: 900px) {
+  #recipes {
+    padding: 60px 80px;
+  }
+
+  .swiper {
+    width: 50%;
+  }
+}
+
+@media (max-width: 765px) {
+  .swiper {
+    width: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  #recipes {
+    padding: 40px 40px;
+  }
+
+  .swiper {
+    width: 80%;
+  }
+}
+
+
+footer {
+  background: url(../res/footer.png); /* Color de fondo del footer */
+  color: black; /* Color de texto del footer */
+  text-align: center; /* Centrar el texto */
+  padding: 10px; /* Espaciado interno del footer */
+  width: 100%; /* Ancho del footer al 100% */
+}
+footer img{
+  width: 20px;
+}
+
+header {
+  background: url(../res/fondito.jpg);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: wrap;
+}
+h1{
+  font-size: 70px;
+}
+header img {
+  width: 190px; /* Ajusta el tamaño del logo según tus necesidades */
+}
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 35px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  z-index: 1;
+  margin: -45px;
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.post-buy-button {
+  cursor: pointer;
+}
+
+.precio {
+  margin-top: 10px; /* Ajusta el margen superior según sea necesario */
+  text-align: center; /* Alinea el texto al centro */
+  font-size: 14px; /* Tamaño de fuente */
+  color: yellow; /* Color del texto */
+}
+

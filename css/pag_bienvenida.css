@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+.star {
+  transform-style: preserve-3d;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  color: red;
+}
+
+.star:before {
+  position: absolute;
+  content: '\2726';
+  color: inherit;
+  inset: 0;
+  box-shadow: 0 0 1em .5em #a3c2;
+  filter: drop-shadow(0 0 .5em white);
+  text-shadow: 0 0 .8em #fff5;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  color: #F9F6EF;
+  display: grid;
+  place-content: center;
+  background-image: url('../res/fondito.jpg');
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+h1 {
+  text-align: center; 
+  font-family: Arial; 
+  font-size: 30px; 
+  color: white; 
+  text-shadow: 0px 0px 9px gray;
+}
+
+h3 {
+  text-align: center;
+  color: #1E90FF;
+  margin-top: 5px; /* Ajuste de margen para mejor separación */
+  line-height: 1.2;
+  font-size: 1.5em; /* Tamaño de fuente más pequeño */
+}
+
+h5 {
+  text-align: center;
+  display: inline-block;
+  padding: 10px; 
+  border: 2px solid yellow; 
+  border-radius: 5px; 
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 480px) {
+  h1 {
+    font-size: 2.5em;
+    margin-top: 5px; /* Ajuste de margen para mejor separación */
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  h1 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  h1 {
+    font-size: 4em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-button,
+.register-button {
+  position: relative;
+  display: inline-block;
+  padding: 8px 16px; 
+  font-size: 14px; 
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 10px;
+  letter-spacing: 2px; 
+}
+
+.login-button:hover,
+.register-button:hover {
+  cursor: pointer;
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-button span,
+.register-button span {
+  position: absolute;
+  display: block;
+}
+
+.login-button span:nth-child(1),
+.register-button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #000000);
+  animation: btn-anim1 1s linear infinite;
+}
+
+.login-button span:nth-child(2),
+.register-button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #000000);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+.login-button span:nth-child(3),
+.register-button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #000000);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+.login-button span:nth-child(4),
+.register-button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #000000);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+body:hover {
+  overflow: auto !important;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-button,
+.register-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+}
+

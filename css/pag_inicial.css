@@ -1,0 +1,254 @@
+html{
+    background: url(../res/fondito.jpg);
+  }
+  header {
+    background: url(../res/fondito.jpg);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+  }
+  h1{
+    font-size: 70px;
+  }
+  header img {
+    width: 190px; /* Ajusta el tamaño del logo según tus necesidades */
+  }
+
+  footer img{
+    width: 20px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+  }
+
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  nav ul li {
+    margin-right: 20px;
+  }
+
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 35px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    margin: -45px;
+  }
+
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Estilos para las tarjetas */
+  .card {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Añade sombra */
+    transition: transform 0.3s; /* Agrega transición para el efecto 3D */
+    background: url(../res/acuarela.jpg);
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+  }
+
+  .card:hover {
+    transform: translateY(-5px); /* Efecto 3D al pasar el cursor */
+  }
+
+  .slider-container {
+    width: 15%;
+  }
+
+  .slider img {
+  max-width: 100%; /* Cambia 'width' a 'max-width' para asegurar que las imágenes no superen su tamaño original */
+  height: auto;
+  border-radius: 8px; /* Añade bordes redondeados */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Añade sombra a las imágenes */
+}
+
+  .card-body {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .neon{
+      text-align: center; 
+      font-family: Arial; 
+      font-size: 30px; 
+      COLOR: #1278BF; 
+      text-shadow: 0px 0px 9px #508AD3;
+
+  }
+
+  .card-body {
+text-align: center; /* Centra el contenido dentro del div */
+}
+
+.ir-al-producto-btn {
+margin-top: 15px; /* Añade un espacio superior para separar el botón del contenido */
+}
+
+footer {
+    background: url(../res/footer.png); /* Color de fondo del footer */
+    color: black; /* Color de texto del footer */
+    text-align: center; /* Centrar el texto */
+    padding: 10px; /* Espaciado interno del footer */
+    width: 100%; /* Ancho del footer al 100% */
+  }
+
+  .ir-al-producto-btn {
+  position: relative;
+  display: inline-block;
+  padding: 1px 30px;
+  margin: 10px 0;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+  letter-spacing: 4px;
+  overflow: hidden;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.ir-al-producto-btn:hover {
+  background: #03e9f4;
+  color: #050801;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 200px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
+.ir-al-producto-btn:nth-child(1) {
+  filter: hue-rotate(270deg);
+}
+
+.ir-al-producto-btn:nth-child(2) {
+  filter: hue-rotate(110deg);
+}
+
+.ir-al-producto-btn span {
+  position: absolute;
+  display: block;
+}
+
+.ir-al-producto-btn span:nth-child(1) {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1 {
+  0% {
+      left: -100%;
+  }
+  50%, 100% {
+      left: 100%;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width: 480px) {
+  header{
+    width: 100%;
+  }
+  
+  body{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  header{
+    width: 100%;
+  }
+  
+  body{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+ 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  header{
+    width: 100%;
+  }
+  
+  body{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  header{
+    width: 100%;
+  }
+  
+  body{
+    width: 100%;
+  }
+
+  footer{
+    width: 100%;
+  }
+}

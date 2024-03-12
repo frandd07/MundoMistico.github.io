@@ -1,0 +1,120 @@
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0; /* Ajusta el padding a 0 para asegurarte de que no haya espacio adicional */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ajusta la distribución vertical */
+  align-items: center;
+  min-height: 100vh; /* Asegura que el cuerpo ocupe al menos el 100% del alto de la ventana */
+  background-image: url(../res/fondito.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background: url(../res/fondito.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+footer {
+  background: url(../res/footer.png);
+  color: black;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+}
+
+h1{
+    color: white;
+    margin: 0;
+}
+h3{
+    color:white
+}
+
+  footer img{
+    width: 20px;
+    margin-top: 0px;
+  }
+
+  h1{
+    font-size: 70px;
+  }
+  header img {
+    width: 190px;
+    margin-top: 70px;
+  }
+  nav {
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li:last-child {
+    margin-right: 0;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 35px;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+    margin: -45px;
+  }
+  
+  .dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    display: block;
+    text-decoration: none;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  h4 {
+    text-align: center;
+    display: inline-block;
+    padding: 10px; 
+    border: 2px solid yellow; 
+    border-radius: 5px; 
+    color: white;
+  }
+  
